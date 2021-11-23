@@ -20,7 +20,7 @@ def obtener_juegos():
     return juegos
 
 
-def eliminar_juego(id):
+def eliminar_game(id):
     conexion = obtener_conexion()
     with conexion.cursor() as cursor:
         cursor.execute("DELETE FROM juegos WHERE id = %s", (id,))

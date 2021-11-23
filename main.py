@@ -66,7 +66,7 @@ def juegos():
 
 @app.route("/eliminar_juego", methods=["POST"])
 def eliminar_juego():
-    controlador_juegos.eliminar_juego(request.form["id"])
+    controlador_juegos.eliminar_game(request.form["id"])
     return redirect("/juegos")
 
 
